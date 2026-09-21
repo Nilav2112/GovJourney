@@ -1,0 +1,21 @@
+GOVJOURNEY TEST CHECKLIST
+
+1. npm install
+2. npm start
+3. Open http://localhost:3000
+4. Explore Life Events — confirm 20 events appear
+5. Search/filter events
+6. Start an event and answer all questions
+7. Complete roadmap steps in order
+8. Open My Journeys
+9. Open Documents and upload a small file
+10. Download/delete a vault file
+11. Open Office Locator and test Directions
+12. Add/delete a reminder and export Calendar
+13. Check Notifications
+14. Test English/Hindi/Kannada selector
+15. Test microphone button in a browser that supports SpeechRecognition
+16. Test chatbot
+17. Open Admin Console and test analytics/add/remove event
+18. Test mobile responsive layout
+19. Disconnect network and confirm offline banner/saved local data

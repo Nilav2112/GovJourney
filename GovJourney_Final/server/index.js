@@ -1,0 +1,11 @@
+const express=require('express'); const path=require('path'); const dotenv=require('dotenv');
+dotenv.config();
+const app=express(); const PORT=process.env.PORT||3000;
+app.use(express.json({limit:'1mb'})); app.use(express.urlencoded({extended:true}));
+app.use(express.static(path.join(__dirname,'..','public')));
+app.get('/api/health',(req,res)=>res.json({ok:true,app:'GovJourney',version:'2.0.0'}));
+app.get('/api/config',(req,res)=>res.json({googleMapsConfigured:!!process.env.GOOGLE_MAPS_API_KEY}));
+app.get('/api/events',(req,res)=>res.json({source:'frontend-demo'}));
+app.post('/api/chat',(req,res)=>{const t=String(req.body.message||'').toLowerCase();let reply='Please choose a Life Event to get a personalized government action plan.';if(t.includes('marriage'))reply='Start with Marriage. GovJourney will show the documents, offices, dependencies and timeline.';else if(t.includes('business'))reply='Try Starting a Business for registration, tax and licence steps.';else if(t.includes('passport'))reply='Use Passport & Travel for passport-related preparation and official portal links.';else if(t.includes('document'))reply='Open Documents to manage your checklist and digital vault.';else if(t.includes('office'))reply='Open Office Locator to search departments and map directions.';res.json({reply});});
+app.get('*',(req,res)=>res.sendFile(path.join(__dirname,'..','public','index.html')));
+app.listen(PORT,()=>console.log(`GovJourney running at http://localhost:${PORT}`));
