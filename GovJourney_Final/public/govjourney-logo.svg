@@ -1,0 +1,65 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="topArc" d="M 120 400 A 280 280 0 0 1 680 400"/>
+    <path id="bottomArc" d="M 680 400 A 280 280 0 0 1 120 400"/>
+  </defs>
+
+  <circle cx="400" cy="400" r="300" stroke="#111111" stroke-width="8" fill="none"/>
+
+  <g fill="#111111" stroke="#111111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 255 376 L 245 382 L 232 376 L 232 366 L 245 360 L 255 366 Z"/>
+    <path d="M 545 376 L 555 382 L 568 376 L 568 366 L 555 360 L 545 366 Z"/>
+    <path d="M 400 210 L 390 220 L 410 220 Z"/>
+  </g>
+
+  <g>
+    <text font-family="Georgia, 'Times New Roman', serif" font-size="74" letter-spacing="8" fill="#111111" text-anchor="middle">
+      <textPath href="#topArc" startOffset="50%">GOV JOURNEY</textPath>
+    </text>
+    <text font-family="Georgia, 'Times New Roman', serif" font-size="64" letter-spacing="7" fill="#111111" text-anchor="middle">
+      <textPath href="#bottomArc" startOffset="50%">SERVING CITIZENS</textPath>
+    </text>
+  </g>
+
+  <g stroke="#111111" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    <path d="M 180 505 L 620 505"/>
+    <path d="M 220 505 L 220 330"/>
+    <path d="M 580 505 L 580 330"/>
+    <path d="M 250 330 L 250 510"/>
+    <path d="M 550 330 L 550 510"/>
+    <path d="M 180 505 L 180 340"/>
+    <path d="M 620 505 L 620 340"/>
+
+    <path d="M 280 420 L 280 505"/>
+    <path d="M 320 420 L 320 505"/>
+    <path d="M 360 420 L 360 505"/>
+    <path d="M 400 420 L 400 505"/>
+    <path d="M 440 420 L 440 505"/>
+    <path d="M 480 420 L 480 505"/>
+    <path d="M 520 420 L 520 505"/>
+
+    <path d="M 340 310 L 400 250 L 460 310"/>
+    <path d="M 310 310 L 490 310"/>
+    <path d="M 305 300 L 495 300"/>
+    <path d="M 180 340 L 620 340"/>
+    <path d="M 190 331 L 610 331"/>
+
+    <path d="M 257 350 L 257 332"/>
+    <path d="M 543 350 L 543 332"/>
+    <path d="M 250 330 L 550 330"/>
+  </g>
+
+  <g fill="none" stroke="#111111" stroke-width="4">
+    <path d="M 400 250 L 400 310"/>
+    <path d="M 334 310 L 466 310"/>
+    <path d="M 350 285 L 450 285"/>
+    <path d="M 340 265 L 460 265"/>
+    <path d="M 328 245 L 472 245"/>
+  </g>
+
+  <g fill="#111111">
+    <circle cx="400" cy="260" r="6"/>
+    <circle cx="320" cy="258" r="5"/>
+    <circle cx="480" cy="258" r="5"/>
+  </g>
+</svg>
